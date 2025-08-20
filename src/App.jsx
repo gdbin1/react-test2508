@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import W_design1 from './webdesign/W_design1'
 import W_design2 from './webdesign_2/W_design2';
+import W_design3 from './webdesign_3/W_design3';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/hook" element={<Hook />} />
           <Route path="/W_design1" element={<W_design1 />} />
           <Route path="/W_design2" element={<W_design2 />} />
+          <Route path="/W_design3" element={<W_design3 />} />
           <Route path="/miniblog" element={<MainPage />} />
           <Route path="/post-write" element={<PostWritePage />} />
           <Route path="/post/:postId" element={<PostViewPage />} />

@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* .main-menu li:hover ul {
+    display: block;
+} */
+ul,
+li {
+    list-style: none;
+}
+
+.header {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+.main-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.main-menu>li {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #1dc7d3;
+    color: paleturquoise;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px;
+    padding: 10px;
+    z-index: 10;
+}
+
+.sub-menu li {
+    width: 120px;
+    padding: 8px 0;
+}
+
+.main-menu>li:hover .sub-menu {
+    display: block;
+}
+
+.slidediv {
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    width: 1200px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.contentsdiv {
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    width: 1200px;
+    height: 200px;
+}
+
+.contents-flexbox {
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    /* padding: 10px 20px; */
+    border: 1px solid;
+}
+
+.content-box {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    line-height: 160px;
+}
+
+.tabs button.active {
+    background-color: #1dc7d3;
+    font-weight: bold;
+}
+
+
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.footerbox {
+    width: 1200px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+
+.footerlogo {
+    flex: 2;
+    border-right: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footercopy {
+    flex: 6;
+    border-right: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footersns {
+    flex: 2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* web2------------ */
+.footer2-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.footer-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.log2,
+.copyright2,
+.sns2 {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* --------web3-------- */
+/* body{
+    background-color: #f1f1f1;
+} */
+.wd3-container {
+    width: 1000px;
+    height: 650px;
+    border: 1px solid black;
+    display: flex;
+    box-shadow: 0 4px 8px;
+    background-color: #f1f1f1;
+}
+
+.left-nav {
+    width: 250px;
+    height: 100%;
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* padding: 20px 0; */
+}
+
+.logo-section {
+      padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.menu-section {
+    padding: 15px;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-section:hover {
+    background-color: aqua;
+}
+
+.submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 150px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.submenu-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.submenu-item:hover {
+    background-color: #e0e0e0;
+}
+
+/* 오른쪽 */
+.right-content {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-box {
+    width: 750px;
+    height: 350px;
+    background-color: #e0e0e0;
+    border: 1px dashed #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents-box {
+    width: 750px;
+    height: 200px;
+    background-color: #f9f9f9;
+    border: 1px dashed #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-box {
+    width: 750px;
+    height: 100px;
+    background-color: #dcdcdc;
+    border: 1px dashed #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
