@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Slide from './Slide'
 import Contents from './Contents'
-// import Footer from '../webDisign1/Footer';
+import Footer from './Footer';
 
 const WebDisign1 = () => {
     return (
@@ -12,7 +12,7 @@ const WebDisign1 = () => {
                 <Header /><hr />
                 <Slide /><hr />
                 <Contents /><hr />
-                {/* <Footer /> */}
+                <Footer />
             </div >
         </>
     );
