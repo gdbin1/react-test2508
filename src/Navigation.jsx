@@ -95,9 +95,9 @@ function Navigation() {
                 <NavItem>
                     <NavLink to="/contact">문의하기</NavLink>
                 </NavItem>
-                 <NavItem>
+                 {/* <NavItem>
                     <NavLink to="/W_design1">웹디자인</NavLink>
-                </NavItem>
+                </NavItem> */}
 
             </NavList>
         </Nav>
