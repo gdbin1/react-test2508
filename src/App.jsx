@@ -23,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hook" element={<Hook />} />
-          <Route path="W_disign1" element={<W_design1 />} />
+          <Route path="/W_design1" element={<W_design1 />} />
           <Route path="/miniblog" element={<MainPage />} />
           <Route path="/post-write" element={<PostWritePage />} />
           <Route path="/post/:postId" element={<PostViewPage />} />

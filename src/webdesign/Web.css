@@ -79,6 +79,7 @@ li {
     align-items: center;
     background-color: #f0f0f0;
     /* padding: 10px 20px; */
+    border: 1px solid;
 }
 
 .content-box {
@@ -89,4 +90,23 @@ li {
     padding: 10px;
     text-align: center;
     line-height: 160px;
+}
+.tabs button.active {
+    background-color: #1dc7d3;
+    font-weight: bold;
+}
+
+
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs button{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    cursor: pointer;
 }

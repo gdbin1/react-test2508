@@ -9,9 +9,9 @@ const WebDisign1 = () => {
         <>
             <div style={{ width: '700px', height: '1200px' }}>
                 dasdasda
-                {/* <Header /><hr />
+                <Header /><hr />
                 <Slide /><hr />
-                <Contents /><hr /> */}
+                <Contents /><hr />
                 {/* <Footer /> */}
             </div >
         </>
