@@ -8,7 +8,6 @@ const WebDisign1 = () => {
     return (
         <>
             <div style={{ width: '700px', height: '1200px' }}>
-                dasdasda
                 <Header /><hr />
                 <Slide /><hr />
                 <Contents /><hr />

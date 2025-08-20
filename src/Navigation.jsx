@@ -72,18 +72,18 @@ const DropdownLink = styled(Link)`
 `;
 
 function Navigation() {
-    return (
-        <Nav>
-            <NavList>
-                <NavItem>
-                    <NavLink to="/">과제방 홈</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink to="/hook">훅</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink to="/miniblog">미니블로그</NavLink>
-                    {/* <DropdownMenu>
+  return (
+    <Nav>
+      <NavList>
+        <NavItem>
+          <NavLink to="/">과제방 홈</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/hook">훅</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/miniblog">미니블로그</NavLink>
+          {/* <DropdownMenu>
             <DropdownItem>
               <DropdownLink to="/miniblog/post-write">쓰기</DropdownLink>
             </DropdownItem>
@@ -91,17 +91,20 @@ function Navigation() {
               <DropdownLink to="/miniblog/post/:postId">보기</DropdownLink>
             </DropdownItem>
           </DropdownMenu> */}
-                </NavItem>
-                <NavItem>
-                    <NavLink to="/contact">문의하기</NavLink>
-                </NavItem>
-                 <NavItem>
-                    <NavLink to="/W_design1">웹디자인1</NavLink>
-                </NavItem>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/contact">문의하기</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/W_design1">웹디자인1</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/W_design2">웹디자인2</NavLink>
+        </NavItem>
 
-            </NavList>
-        </Nav>
-    );
+      </NavList>
+    </Nav>
+  );
 }
 
 export default Navigation;

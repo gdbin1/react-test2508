@@ -11,6 +11,7 @@ import Hook from './Hook/Hook';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import W_design1 from './webdesign/W_design1'
+import W_design2 from './webdesign_2/W_design2';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/hook" element={<Hook />} />
           <Route path="/W_design1" element={<W_design1 />} />
+          <Route path="/W_design2" element={<W_design2 />} />
           <Route path="/miniblog" element={<MainPage />} />
           <Route path="/post-write" element={<PostWritePage />} />
           <Route path="/post/:postId" element={<PostViewPage />} />
