@@ -140,12 +140,22 @@ li {
 
 .banner-box {
     width: 30%;
-    height: 180px;
+    height: auto;
     border: 1px solid black;
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-    line-height: 160px;
+    background: linear-gradient(to right, #ffffff 0%, #ffff99 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-shadow: none;
+    cursor: pointer;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.popup-combo-background {
+    background: url('/contentsimage/bannerbox.png') center/cover no-repeat;
 }
 
 .link-box {
@@ -156,7 +166,8 @@ li {
     padding: 10px;
     position: relative;
 }
-.link-box ol{
+
+.link-box ol {
     display: none;
     position: absolute;
     top: 100%;
@@ -168,14 +179,17 @@ li {
     border: 1px solid black;
     box-shadow: 0 2px 5px red;
 }
-.link-box:hover ol{
+
+.link-box:hover ol {
     display: block;
 }
-.link-box h3{
+
+.link-box h3 {
     text-align: center;
     cursor: pointer;
 }
-.link-box li{
+
+.link-box li {
     margin: 5px 0;
 }
 

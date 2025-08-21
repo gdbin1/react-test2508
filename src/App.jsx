@@ -1,3 +1,4 @@
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './Fotter';
@@ -15,34 +16,38 @@ import W_design2 from './webdesign_2/W_design2';
 import W_design3 from './webdesign_3/W_design3';
 import W_design4 from './webdesign_4/W_design4';
 
-function App() {
-
+const MainLayout = ({ children }) => {
   return (
     <>
       <Header />
       <Navigation />
-      {/* </Header> */}
       <MainContent>
+        {children}
+      </MainContent>
+      <Footer />
+    </>
+  );
+};
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/W_design4" element={<W_design4 />} />
+      <Route path="*" element={<MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hook" element={<Hook />} />
           <Route path="/W_design1" element={<W_design1 />} />
           <Route path="/W_design2" element={<W_design2 />} />
           <Route path="/W_design3" element={<W_design3 />} />
-          <Route path="/W_design4" element={<W_design4 />} />
           <Route path="/miniblog" element={<MainPage />} />
           <Route path="/post-write" element={<PostWritePage />} />
           <Route path="/post/:postId" element={<PostViewPage />} />
-
-          {/* <Route path="/miniblog/post-write" element={<PostWritePage />} /> */}
-          {/* <Route path="/miniblog/post/:postId" element={<PostViewPage />} /> */}
-
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </MainContent>
-      <Footer />
-
-    </>
-  )
+      </MainLayout>} />
+    </Routes>
+  );
 }
-export default App
+
+export default App;
