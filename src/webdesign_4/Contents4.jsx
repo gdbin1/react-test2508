@@ -46,7 +46,16 @@ const Contents4 = () => {
                 </div>
             </div>
             <div className='banner-box'>배너(C.3)</div>
-            <div className='link-box'>바로가기(C.4)</div>
+            <div className='link-box'>
+                <h3>🎬 영화 순위 TOP 5</h3>
+                <ol className='top-t-list'>
+                    <li>1위 귀멸의 칼날:무한성편</li>
+                    <li>2위 어벤져스:인피니티 워</li>
+                    <li>3위 트랜스포머</li>
+                    <li>4위 분노의 질주</li>
+                    <li>5위 좀비딸</li>
+                </ol>
+                </div>
             <Popup isOpen={isNoticePopupOpen} onClose={() => setIsNoticePopupOpen(false)}>
                 <div className='popup-text'>
                     <h3>공지사항</h3>
