@@ -1,10 +1,10 @@
 import React from 'react';
-import logoImage from './logo/mylogo.png';
+import logoImage from './logo/logo.png';
 
 const Header4 = () => {
     return (
         <header className='header'>
-            <img src={logoImage} alt="로고" style={{ width: '80px', height: '80px' }} />
+            <img src={logoImage} alt="로고" className='header-logo' />
             <nav>
                 <ul className='main-menu'>
                     <li><a href="#">영화</a>
