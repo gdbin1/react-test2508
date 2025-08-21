@@ -1,5 +1,5 @@
 import React from 'react';
-
+import logoImage from './logo/mylogo.png';
 const Footer2 = () => {
     return (
         <>
@@ -8,13 +8,13 @@ const Footer2 = () => {
                     <tbody>
                         <tr>
                             <td rowSpan={2}>
-                                <div className='logo2'>로고</div>
+                                <img src={logoImage} alt="로고" style={{ width: '80px', height: '80px' }} />
                             </td>
                             <td>
                                 <div className='copyright2'>Copyright</div>
                             </td>
-                            </tr>
-                            <tr>
+                        </tr>
+                        <tr>
                             <td>
                                 <div className='sns2'>SNS</div>
                             </td>

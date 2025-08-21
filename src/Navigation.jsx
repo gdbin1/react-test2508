@@ -104,6 +104,9 @@ function Navigation() {
          <NavItem>
           <NavLink to="/W_design3">웹디자인3</NavLink>
         </NavItem>
+         <NavItem>
+          <NavLink to="/W_design4">웹디자인4</NavLink>
+        </NavItem>
 
       </NavList>
     </Nav>
