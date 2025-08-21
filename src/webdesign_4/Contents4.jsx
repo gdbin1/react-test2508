@@ -63,7 +63,8 @@ const Contents4 = () => {
                 <div style={{
                     textAlign: 'center'
                 }}>
-                    콤보 할인 🍿
+                    콤보 할인 🍿<br />
+                    클릭해서 확인
                 </div>
             </div>
             <div className='link-box'>

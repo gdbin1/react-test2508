@@ -5,6 +5,10 @@ const Header4 = () => {
     return (
         <header className='header'>
             <img src={logoImage} alt="로고" className='header-logo' />
+            <div className="search-container">
+                <input type="text" placeholder="영화 제목, 배우, 감독 검색" />
+                <button className="search-button">🔍</button>
+            </div>
             <nav>
                 <ul className='main-menu'>
                     <li><a href="#">영화</a>
